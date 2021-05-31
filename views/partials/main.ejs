@@ -3,10 +3,10 @@
 <style>
 /* Dropdown Button */
 .dropbtn {
-  background-color: #04AA6D;
+  background-color: #008080;
   color: white;
-  padding: 16px;
-  font-size: 16px;
+  padding: 14px;
+  font-size: 14px;
   border: none;
 }
 
@@ -20,15 +20,15 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  background-color: #008080;
+  min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -41,19 +41,19 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #008080;}
 
 
 </style>
 
 <div class="dropdown">
-    <button class="dropbtn">Dropdown</button>
+    <button class="dropbtn">Navigate</button>
     <div class="dropdown-content">
-        <a href="http://localhost:3000/home">Home</a>
-      <a href="http://localhost:3000/about">About Me</a>
-      <a href="http://localhost:3000/projects">Projects</a>
-      <a href="http://localhost:3000/services">Services</a>
-      <a href="http://localhost:3000/contact">Contact</a>
+        <a href="/home">Home</a>
+      <a href="/about">About Me</a>
+      <a href="/projects">Projects</a>
+      <a href="/services">Services</a>
+      <a href="/contact">Contact</a>
     </div>
 </div>
 
