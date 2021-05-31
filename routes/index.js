@@ -31,6 +31,7 @@ router.get('/contact', function(req, res, next) {
   res.render('index', { title: 'Contact'});
 });
 
+/*POST Contact Form page. */
 router.post('/contact-form', function(req, res, next){
   console.log("Contact form request: ", req.body);
   res.redirect('/');
