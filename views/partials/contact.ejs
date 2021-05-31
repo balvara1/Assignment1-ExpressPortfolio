@@ -4,6 +4,17 @@
       box-sizing: border-box;
     }
 
+    div.scroll {
+      margin:4px, 4px;
+      padding:4px;
+      background-color: white;
+      width: 500px;
+      height: 400px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      text-align:justify;
+    }
+
     /* Style Text Boxes */
     input[type=text] {
     padding:5px; 
@@ -28,7 +39,8 @@
 
     /* Container for flexboxes */
     section {
-      display: -webkit-flex;
+      /*display: -webkit-flex;*/
+      display: block;
       display: flex;
     }
     
@@ -43,8 +55,8 @@
       -webkit-flex: 3;
       -ms-flex: 3;
       flex: 3;
-      background-color: #f1f1f1;
-      padding: 10px;
+      background-color: white;
+      padding: 6px;
     }
     
     /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
@@ -54,35 +66,30 @@
         flex-direction: column;
       }
     }
-
-    </style>
+</style>
 
 <!--Panel for email and LinkedIn details-->
 <div class="panel panel-default">
     <div class="panel-heading">
-        
-        <table style="width:85%">
-            
+        <font size="1">     
+        <table style="width:80%">      
             <tr>
             <td><b>Contact me thru email: balvara1@my.centennialcollege.ca</b></td>
             <td><b>LinkedIn: https://www.linkedin.com/in/bernadette-alvarado-365ba6a3/</b></td>
             </tr>
         </table>
+        </font>
     </div>
 </div>
 
 <section>
-    <nav>
-         <ul>
-<% if (title == "Contact") { %>
-    <img src="\assets\images\contact.png" class="img-fluid" alt="Projects" style="width:600px;height:450px;" align="middle">
-        <% } %>
-        </ul>
-    </nav>
+    <td><img src="\assets\images\contact.png" class="img-fluid" alt="Projects" style="width:600px;height:450px;" align="middle"></td>
+
 <article>
+    <div class="scroll">
         <h1>Let's Get In Touch</h1>
         <hr>
-            <table style="width:50%">
+            <table style="width:60%">
                 <form id="contact-form" method="POST" action="/contact-form">
                 <tr>
                     
@@ -111,6 +118,7 @@
                 </tr>
                 </form>
             </table>
-        </hr>       
+        </hr>   
+    </div>
 </article>
 </section>
