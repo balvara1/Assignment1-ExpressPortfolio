@@ -1,0 +1,54 @@
+<!--Projects Page-->
+<style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Container for flexboxes */
+    section {
+      display: -webkit-flex;
+      display: flex;
+    }
+    
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    /* Style the content */
+    article {
+      -webkit-flex: 3;
+      -ms-flex: 3;
+      flex: 3;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+    
+    /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+      section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+    }
+</style>
+
+<section>
+    <nav>
+         <ul>
+            <img src="\assets\images\projects.png" class="img-fluid" alt="Projects" style="width:800px;height:250px;" align="middle">
+        </ul>
+    </nav>
+<article>
+        <h1>Previous Projects I've Worked On</h1>
+        <hr>
+            <P style="text-align:left"><b>Data migration from Rally to Jira</b> - served as an Administrator, Developer and Tester for the project.
+            <br>
+            <br><b>Kick off Confluence to whole department</b> - served as an Administrator, Developer and Tester for the project.
+            <br>
+            <br><b>Informatica PowerCenter and IICS migration from IBM servers to Azure</b> - served as an Administrator, Developer and Tester for the project.
+            </P>
+        </hr>       
+</article>
+</section>

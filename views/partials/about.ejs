@@ -1,0 +1,58 @@
+<!--About Me Page-->
+<style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Container for flexboxes */
+    section {
+      display: -webkit-flex;
+      display: flex;
+    }
+    
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    /* Style the content */
+    article {
+      -webkit-flex: 3;
+      -ms-flex: 3;
+      flex: 3;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+    
+    /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+      section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+    }
+</style>
+
+<section>
+    <nav>
+        <ul>
+        <% if (title == "About") { %>
+            <img src="\assets\images\profile.jpg" alt="Profile Picture" style="width:400px;height:350px;">
+                <% } %>
+        </ul>
+    </nav>
+<article>
+    <h1>Personal Information</h1>
+    <hr>
+        <P style="text-align:left">I am Bernadette Alvarado, a Software Engineering Technology student
+            from Centennial College.<br>
+            Prior to coming to Canada, I was a Platform Technical Analyst specializing in the ETL tool,
+        Informatica PowerCenter.<br>I enjoy doing designs, analyzing data and creating scripts as a way of improving
+    work.</P>
+    <br>
+    <br>
+    <p>Click the link for a copy of my <a href="\assets\BernadetteAlvarado_CV.pdf">resume.</a></p>
+    </hr>      
+</article>
+</section>

@@ -1,0 +1,116 @@
+<!--Contact Page-->
+<style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Style Text Boxes */
+    input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    }
+
+    input[type=text]:focus {
+    border-color:#333;
+    }
+
+    /* Style for Button */
+    input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    }
+
+    /* Container for flexboxes */
+    section {
+      display: -webkit-flex;
+      display: flex;
+    }
+    
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    /* Style the content */
+    article {
+      -webkit-flex: 3;
+      -ms-flex: 3;
+      flex: 3;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+    
+    /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+      section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+    }
+
+    </style>
+
+<!--Panel for email and LinkedIn details-->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        
+        <table style="width:85%">
+            
+            <tr>
+            <td><b>Contact me thru email: balvara1@my.centennialcollege.ca</b></td>
+            <td><b>LinkedIn: https://www.linkedin.com/in/bernadette-alvarado-365ba6a3/</b></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<section>
+    <nav>
+         <ul>
+<% if (title == "Contact") { %>
+    <img src="\assets\images\contact.png" class="img-fluid" alt="Projects" style="width:600px;height:450px;" align="middle">
+        <% } %>
+        </ul>
+    </nav>
+<article>
+        <h1>Let's Get In Touch</h1>
+        <hr>
+            <table style="width:50%">
+                <form id="contact-form" method="POST" action="/contact-form">
+                <tr>
+                    
+                    <td><label for="fname">First name:</label></td>
+                    <td><input type="text" id="fname"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last name:</label></td>
+                    <td><input type="text" id="lname"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="contactnum">Contact Number:</label></td>
+                    <td><input type="text" id="contactnum"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email Address:</label></td>
+                    <td><input type="text" id="email"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Message:</label></td>
+                    <td><input type="text" id="message" style="height: 100px;" /><br><br></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="center"><input type="submit" id="submit" value="Submit"></td>
+                </tr>
+                </form>
+            </table>
+        </hr>       
+</article>
+</section>
